@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import ChartList from '../components/ChartList';
 
 class MusicContainer extends Component {
+
   constructor(props){
     super(props);
     this.state = {
-      tracks: [],
-      currentTrack: null
+      tracks: []
     };
   }
 
@@ -15,12 +15,13 @@ class MusicContainer extends Component {
 
     fetch(url)
       .then(res => res.json())
-      .then(tracks => this.setState({tracks: tracks}))
+      .then(tracks => this.setState({ tracks: tracks.feed.entry }))
       .catch(err => console.error(err));
     }
+    
   render () {
     return (
-      <ChartList></ChartList>
+      <ChartList tracks={ this.state.tracks }></ChartList>
     )
   }
 }

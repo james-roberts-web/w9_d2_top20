@@ -1,8 +1,11 @@
 import React from 'react';
 
-const TrackDetails = (props) => {
+const TrackDetails = ({track}) => {
+
   return (
-    <h3>I AM A TRACK</h3>
+
+      <h3>{track["im:name"].label}</h3>
+    
   )
 }
 
