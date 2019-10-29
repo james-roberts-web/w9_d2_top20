@@ -1,4 +1,5 @@
 .App {
+  display: flex;
   text-align: center;
 }
 
@@ -19,4 +20,106 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+html {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  color: white;
+  background: linear-gradient(45deg, rgba(216, 84, 172,1) 0%, rgba(254, 115, 53,1) 100%);
+}
+
+h1{
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+h3{
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+h4 {
+  font-weight: 200;
+  font-size: 2rem;
+}
+
+p{
+  font-weight: 200;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.music-container {
+  margin: 5%;
+  display: grid;
+}
+
+/* .chart-list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5px;
+  padding:0.75em;
+  border: 1px solid white;
+} */
+.header {
+  margin:auto;
+}
+.chart-list-container {
+  padding: 0;
+  margin:0;
+  display: block;
+}
+.chart-list {
+  padding: 0;
+  margin:0;
+  display: block;
+}
+.track-details {
+  margin: 0;
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 5px;
+  padding:0.75em;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.release-image {
+  margin: 0;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.track-and-artist {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+
+.track-name {
+  margin: 0;
+  display:flex;
+  justify-content: flex-start;
+}
+
+.artist-name {
+  margin: 0;
+  display:flex;
+  justify-content: flex-start;
+}
+
+.release-image {
+  margin: 0;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+
 }

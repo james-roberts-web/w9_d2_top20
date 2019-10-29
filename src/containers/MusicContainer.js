@@ -25,10 +25,15 @@ class MusicContainer extends Component {
     return (
 
       <div className="music-container">
-        <h1 className="title"> Top 20 Charts </h1>
+        <div className="header">
+          <h1 className="title"> Top 20 Charts </h1>
+        </div>
+        <div className="subheader">
+          <p>Has anyone seen Zane Lowe about?</p>
+        </div>
         <ChartList tracks={ this.state.tracks }></ChartList>
       </div>
-      
+
     )
   }
 }

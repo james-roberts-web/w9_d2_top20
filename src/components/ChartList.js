@@ -14,10 +14,11 @@ const ChartList = (props) => {
   })
 
   return(
-
-    <ul className="chart-list">
-    {tracks}
-    </ul>
+    <div className="chart-list-container">
+      <ul className="chart-list">
+        {tracks}
+      </ul>
+    </div>
 
   )
 }
