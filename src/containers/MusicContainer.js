@@ -5,12 +5,14 @@ class MusicContainer extends Component {
 
   constructor(props){
     super(props);
+
     this.state = {
       tracks: []
     };
   }
 
   componentDidMount() {
+
     const url = "https://itunes.apple.com/gb/rss/topsongs/limit=20/json";
 
     fetch(url)
@@ -18,10 +20,15 @@ class MusicContainer extends Component {
       .then(tracks => this.setState({ tracks: tracks.feed.entry }))
       .catch(err => console.error(err));
     }
-    
+
   render () {
     return (
-      <ChartList tracks={ this.state.tracks }></ChartList>
+
+      <div className="music-container">
+        <h1 className="title"> Top 20 Charts </h1>
+        <ChartList tracks={ this.state.tracks }></ChartList>
+      </div>
+      
     )
   }
 }

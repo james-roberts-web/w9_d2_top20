@@ -15,10 +15,10 @@ const ChartList = (props) => {
 
   return(
 
-    <p>
+    <ul className="chart-list">
     {tracks}
-    </p>
-    
+    </ul>
+
   )
 }
 
